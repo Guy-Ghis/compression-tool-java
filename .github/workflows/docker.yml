@@ -43,6 +43,6 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: ./java-compressor
-          file: ./java-compressor/Dockerfile
+          file: ./Dockerfile
           push: ${{ github.event_name == 'push' }}
           tags: ghcr.io/guy-ghis/${{ matrix.project }}:latest
