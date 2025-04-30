@@ -42,7 +42,7 @@ jobs:
       - name: Build and push Java Compressor Docker image
         uses: docker/build-push-action@v5
         with:
-          context: ./java-compressor
+          context: .
           file: ./Dockerfile
           push: ${{ github.event_name == 'push' }}
           tags: ghcr.io/guy-ghis/${{ matrix.project }}:latest
