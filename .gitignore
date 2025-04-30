@@ -1,0 +1,27 @@
+# Compiled class files
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+*.log
+*.tmp
+*.swp
+
+# Maven build files
+.mvn/
+!/.mvn/wrapper/maven-wrapper.jar
+.idea/
+.gradle/
+target/
+build/
+
+# Docker
+*.pid
+*.tar
+*.gz
+*.env
+docker-compose.override.yml
+
+# VS Code
+.vscode/
